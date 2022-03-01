@@ -1,8 +1,8 @@
-@import url("@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');");
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 * {
   box-sizing: border-box;
   margin: 0px;
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 .header {
   background-color: white;
@@ -40,6 +40,14 @@
   color: #6e6d7a;
   /* margin-right: 80px; */
 }
+.headerTitle nav ul{
+  list-style: none;
+
+}
+.headerTitle nav ul li a{
+  display: flex;
+  flex-direction: row;
+}
 .mainuName {
   color: gray;
   margin-left: 20px;
@@ -47,6 +55,54 @@
 }
 .mainuName:hover {
   color: black;
+}
+.inspiration{
+  display: flex;
+  flex-direction: row;
+}
+.inspirationDiv{
+  display: none;
+  flex-direction: row;
+  width: 50%;
+  height: 100%;
+  margin-top: 0px;
+  position: absolute;
+  top: 50px;
+  left: 150px;
+}
+.inspirationDiv2{
+  display: none;
+  flex-direction: row;
+  width: 50%;
+  height: 25%;
+  margin-top: 0px;
+  position: absolute;
+  top: 50px;
+  left: 250px;
+  /* background-color: red; */
+}
+.design{
+  width: 50%;
+  height: 20vh;
+  background-color: #f9f8fd;
+  border: 1px solid black;
+}
+.design h1{
+  font-size: 12px;
+  padding: 5px;
+  cursor: pointer;
+
+}
+.design h1:hover{
+  color:cadetblue;
+}
+.designCategories{
+  width: 50%;
+  height: 20vh;
+  /* background-color: blue; */
+}
+.designCategories h2{
+  font-size: 12px;
 }
 .signBar {
   width: 25%;
@@ -94,6 +150,7 @@
   background-color: #f9f8fd;
   display: flex;
   flex-direction: row;
+
   /* border: 1px solid lightgrey; */
   /* justify-content: space-between; */
 }
@@ -180,6 +237,13 @@
   align-items: center;
   justify-content: center;
   margin-top: 20px;
+}
+.filterPage nav ul{
+  list-style: none;
+}
+.filterPage nav ul li a{
+  display: flex;
+  flex-direction: row;
 }
 .populer {
   width: 15%;
@@ -394,6 +458,9 @@
   font-weight: 100;
   /* background-color: blue; */
 }
+.endLeftTopFooterImg nav ul{
+  list-style: none;
+}
 .endLeftTopFooterImg img {
   cursor: pointer;
 }
@@ -426,6 +493,13 @@
   /* margin-left: 40px; */
   padding-left: 30px;
 }
+.div2nd nav ul{
+  list-style: none;
+}
+.div2nd nav ul li a{
+  display: flex;
+  flex-direction: column;
+}
 .title1 {
   font-weight: 600;
   font-size: 15px;
@@ -448,59 +522,143 @@
   height: 100%;
 }
 
-.nameOption {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.signUpPAge{
+  width: 100%;
+  height: 100vh;
   display: flex;
   flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
+}
+.leftPage{
+width: 35%;
+height: 100%;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+/* background-color: blue; */
+background-color: #f2d184;
 }
 
-.hide {
-  width: 80vh;
-  height: 60vh;
+.leftSideCenter{
+  width:70% ;
+  height: 80%;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  background-color: white;
-  position: absolute;
-  top: 90px;
-  right: 100px;
-  margin: 20px;
-  border: 1px solid lightgray;
-  border-radius: 5px;
-  object-fit: contain;
-  padding: 20px;
+  /* background-color: blue; */
 }
 
 
-.alreadyAMenber {
+.leftSideCenter p{
+  color: #866118;
+  font-size: 25px;
+  font-weight: bolder;
+  text-align: start;
+  padding-top: 20px;
+}
+.leftSideCenter img{
+  padding-top: 30px;
+}
+
+.rightPage{
+width: 65%;
+height: 100%;
+/* background-color: brown; */
+}
+.alreadyAMenber{
   width: 100%;
-  /* height: 3vh; */
+  height: 7vh;
   /* background-color: rebeccapurple; */
   display: flex;
   flex-direction: row;
   justify-content: end;
-  align-items: flex-start;
-  margin-bottom: 10px;
-  font-size: 14px;
+  align-items: center;
   /* padding-right: 20px; */
+} 
+
+.alreadyAMenber nav ul{
+  list-style: none;
+}
+.alreadyAMenber nav ul li{
+width: 100%;
+height: 100%;
+margin-top: 10px;
+}
+.mediaQuary{
+  display: none;
+  text-align: start;
 }
 /* .SignIn{
   height: 50%;
 } */
-.signInalready {
+.signInalready{
   cursor: pointer;
   color: blue;
-  /* margin-right: 10px; */
-  margin-left: 5px;
-  font-size: 14px;
-
+  margin-right: 10px;
+  margin-left: 10px;
+  
 }
-.signUpPage {
+.signUpPage{
   width: 100%;
-  height: 100%;
+  height: 90vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -509,17 +667,17 @@
   /* background-color: red; */
 }
 
-.centerSignUp {
-  width: 100%;
+.centerSignUp{
+  width:40%;
   height: 100%;
   /* background-color: aqua; */
 }
-.centerSignUp p {
+.centerSignUp p{
   color: black;
-  font-size: 20px;
-  font-weight: 900;
-  text-align: center;
-  /* margin-top: 20px; */
+  font-size: 30px;
+  font-weight: bold;
+  text-align: start;
+  margin-top: 20px;
 }
 .signUpGoogle {
   margin-top: 10px;
@@ -528,12 +686,12 @@
   display: flex;
   flex-direction: row;
    align-items: center; 
-  justify-content: center; 
+  justify-content: start; 
   /* background-color: blueviolet; */
 }
 
  .withGoogle {
-  width: 40%;
+  width: 60%;
   height: 100%;
    display: flex;
   flex-direction: row;
@@ -541,6 +699,7 @@
   align-items: center; 
     text-align: center;  
   background-color:blue; 
+  margin-top: 20px;
  } 
  .withGoogle:hover{
   background-color: rgb(86, 86, 197);
@@ -552,12 +711,20 @@
    object-fit: contain;
    margin-left: 2px;
  }
+.loginWithGoogle{
+  width: 100%;
+  height: 100%;
+  /* background-color: rebeccapurple; */
+border: none;
+border-radius: 10px;
+}
 .loginWithGoogle {
   width: 90%;
   height: 100%;
   background-color: transparent;
   border:none;
   color: white;
+  font-weight: 700;
   /* border-radius: 10px; */
   text-align:center;
   cursor: pointer;
@@ -568,595 +735,769 @@
   /* color: black; */
   border: none;
 }
-.withTweetr {
-  margin-left: 10px;
+
+.withTweetr{
   cursor: pointer;
+  
+  margin-left: 20px;
+  margin-top: 22px;
 }
-.hiden {
+.hiden{
   width: 100%;
-  height: 60%;
+  height: 50%;
   display: flex;
   flex-direction: row;
   align-items: center;
   flex-wrap: wrap;
+  margin-top: 30px;
 }
 
-.nameOrEmail {
+.nameOrEmail{
   width: 100%;
   height: 70px;
   /* background-color: gold; */
   display: flex;
   flex-direction: row;
-  /* align-items: flex-start; */
+  align-items: flex-start;
 }
-.nameOption1 {
+.nameOption{
   font-size: 15px;
   font-weight: bold;
   flex: 1;
   flex-basis: 400px;
   width: 100%;
-  height: 20vh;
-  display: flex;
-  flex-direction: column;
+  height: 10vh;
   text-align: start;
   margin-left: 1px;
-}
-.nameOption1 p {
-  font-size: 15px;
-  font-weight: bold;
-  margin-top: 20px;
-  margin-left: 5px;
-  /* margin-bottom: 10px; */
-  text-align: start;
-}
-.nameOption2{
-  font-size: 15px;
-  font-weight: bold;
-  flex: 1;
-  flex-basis: 400px;
-  width: 100%;
-  height: 20vh;
   display: flex;
   flex-direction: column;
-  text-align: start;
-  margin-left: 1px;
 }
-.nameOption2 p {
-  font-size: 15px;
+.nameOption p{
+  font-size: 18px;
   font-weight: bold;
-  margin-top: 20px;
-  text-align: start;
-  margin-left: 5px;
-  /* margin-bottom: 10px; */
-
-}
-.yourName {
-  width: 97%;
-  height: 25px;
-  border-radius: 5px;
-  border: none;
-  font-size: 15px;
-  text-align: start;
-  padding-left: 10px;
-  margin-right: 20px;
-  /* margin-bottom: 10px; */
-  margin-left: 5px;
-
-  background-color: lightgrey;
-}
-.yourName:hover {
-  background-color: transparent;
-  border: 2px solid lightpink;
-}
-.userName {
-  width: 97%;
-  height: 25px;
-  border-radius: 5px;
-  border: none;
-  font-size: 15px;
-  text-align: start;
-  padding-left: 10px;
-  margin-right: 20px;
-
-  background-color: lightgrey;
-}
-.userName:hover {
-  background-color: transparent;
-  border: 2px solid lightpink;
-}
-.passEmailOption {
-  width: 100%;
-  height: 20vh;
-  display: flex;
-  flex-direction: column;
-  margin-top: 6px;
-}
-.nameOption3{
-  font-size: 15px;
-  font-weight: bold;
-  /* flex: 1; */
-  /* flex-basis: 400px; */
-  width: 100%;
-  height: 20vh;
-  display: flex;
-  flex-direction: column;
-  text-align: start;
-  margin-left: 1px;
-}
-.nameOption3 p{
-  font-size: 15px;
-  font-weight: bold;
+  text-align: start; 
   /* margin-top: 20px; */
+}
+.yourName{
+  width: 99%;
+  height: 40px;
+  border-radius: 10px;
+  border: none;
+  font-size: 15px;
   text-align: start;
-  /* margin-bottom: 10px; */
-  margin-left: 5px;
+  padding-left: 10px;
+  background-color: #f3f3f4;
 
 }
-.emailid {
-  width: 97%;
-  height: 25px;
-  background-color: lightgrey;
-  border: none;
-  border-radius: 5px;
-  font-size: 15px;
-  padding-left: 10px;
-  margin-right: 20px;
-  margin-left: 5px;
-
-}
-.emailid:hover {
+.yourName:hover{
   background-color: transparent;
-  border: 2px solid lightpink;
+  border: 3px solid lightpink;
 }
-.password {
-  width: 97%;
-  height: 25px;
-  background-color: lightgrey;
+.yourEmail{
+  width: 99%;
+  height: 40px; 
+  border-radius: 10px;
   border: none;
-  border-radius: 5px;
   font-size: 15px;
-  padding-left: 10px;
   text-align: start;
-  margin-right: 20px;
-  margin-left: 5px;
+  padding-left: 10px;
+  background-color: #f3f3f4;
 }
-.password:hover {
+.yourEmail:hover{
   background-color: transparent;
-  border: 2px solid lightpink;
+  border: 3px solid lightpink;
 }
-.check {
+.passEmailOption{
   width: 100%;
-  height: 30px;
+  height: 20vh;
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+}
+.yourNumber{
+  width: 100%;
+  height: 40px;
+background-color: #f3f3f4;
+border: none;
+border-radius: 10px;
+font-size: 15px;
+padding-left: 10px;
+}
+.yourNumber:hover{
+  background-color: transparent;
+  border: 3px solid lightpink;
+}
+.password{
+  width: 100%;
+  height: 40px;
+  background-color: #f3f3f4;
+border: none;
+border-radius: 10px;
+font-size: 15px;
+padding-left: 10px;
+}
+.password:hover{
+  background-color: transparent;
+  border: 3px solid lightpink;
+}
+.check{
+  width: 100%;
+  height: 55px;
   /* background-color:chartreuse; */
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  /* margin-top: 20px; */
+  margin-top: 50px;
 }
-.checkboxs {
+.checkboxs{
   margin-left: 5px;
-  /* margin-top: 10px; */
-  width: 30px;
-  height: 30px;
-}
-.check p {
-  font-size: 15px;
-  text-align: justify;
-  padding-left: 16px;
-  font-weight: 400;
-}
-.end{
-  width: 100%;
-  height: 20%;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-}
-h1{
-  font-size: 15px;
-  font-weight: 600;
-  text-align: center;
-}
-.done {
-  width: 35%;
-  height: 35px;
-  color: white;
-  background-color: #ea4c89;
-  margin-top: 20px;
-  /* margin-left: 30px; */
-  font-size: 18px;
-  border: none;
-  border-radius: 10px;
-  cursor: pointer;
-}
-.done:hover {
-  background-color: lightpink;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media only screen and (max-width: 600px){
-  .header{
-
-    /* background-color: red; */
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-  }
-  .logo {
-    flex: 1;
-    height: 100%;
-    border: none;
-    /* background-color: rebeccapurple; */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-left: 0px;
-  }
-  .listHideWidth{
-    width: 30%;
-    height: 100%;
-
-    display: flex;
-    align-items: center;
-  }
-  .listHide{
-    display: block;
-    padding-left: 10px;
-
-  }
-  
-  .headerTitle{
-    display: none;
-  }
-  /* .mainuName{
-    font-size: 15px;
-    margin: 5px;
-  } */
-  .signBar{
-    width: 30%;
-    height: 100%;
-    display: flex;
-
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-  }
-  .signBar img {
-  display: none;
-  }
-
-  .signInOrSignup {
-display: none;
-}
-.newProject {
-  width: 100%;
-  height: 30px;
-
-  background-color: lightgrey;
-  border: none;
-  border-radius: 5px;
-  color: black;
-  font-weight: 400;
-  font-size: 12px;
-  /* margin-left: 10px; */
-  margin-right: 0px;
-}
-.newProject:hover{
-  background-color: transparent;
-  border: 1px solid black;
-}
-.middleTitel {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  /* border: 1px solid lightgrey; */
-  /* justify-content: space-between; */
-}
-.left {
-  width: 100%;
-  height: 100%;
-  /* background-color: black; */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  object-fit: contain;
-
-  /* padding-right: 35px; */
-}
-.firstTitle {
-  font-size: 35px;
-  font-weight: bold;
-  text-align:center;
-  margin-left: 0px;
-  margin: 10px;
-
-}
-.secondTitle {
-  font-size: 15px;
-  font-weight: 300;
-  text-align: center;
-  margin-left: 0px;
   margin-top: 10px;
-  line-height: 1.3;
-}
-.signup {
-  width: 100%;
+  width: 40px;
   height: 40px;
-  /* background-color: aqua; */
-  text-align: center;
-  margin-top: 10px;
 }
-.signupBtn {
-  width: 20%;
-  height: 100%;
-  background-color: #ea4c89;
-  border: none;
-  cursor: pointer;
-  border-radius: 5px;
-
-  color: white;
+.check p{
+  font-size: 15px;
+  text-align:justify;
+  padding-left: 16px;
+  font-weight: 200;
 }
-.signupBtn:hover {
-  background-color: lightpink;
-}
-.signInBtn {
-  width: 20%;
-  height: 100%;
-  background-color: #ea4c89;
-  border: none;
-  cursor: pointer;
-  border-radius: 5px;
-  color: white;
-  /* font-size: 20px; */
-}
-.signInBtn:hover {
-  background-color: lightpink;
-}
-.right {
+.doneBtnCenter{
   width: 100%;
-  height: 100%;
-  /* background-color: green; */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.rightsideImg{
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-}
-.filterCenter {
-  width: 100%;
-  height: 10vh;
+  height: 50px;
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-evenly;
-}
-.filterPage {
-  justify-content: space-evenly;
-  margin-top: 20px;
-  object-fit: contain;
-}
-
-.filterPageTitle{
-  display: none;
-}
-.populer{
-  margin-right: 20px;
-}
-.populer select{
-  font-size: 15px;
-}
-.populer1{
-  margin-left: 20px;
-  font-size: 10px;
-}
-.populer1 select{
-  font-size: 15px;
-}
-.footer2 {
-  width: 100%;
-  height: auto;
-  padding-top: 60px;
-  /* background-color: rebeccapurple; */
-  display: flex;
-  flex-direction: column;
-  background-color: #f9f8fd;
-}
-
-.endLeftFooter {
-  width: 100%;
-  height: 100%;
-  /* background-color: red; */
-  display: flex;
-  flex-direction: row;
-  align-items:center;
-  justify-content: center;
-  text-align: start;
-}
-.endLeftFooterForCenter{
-  width: 100%;
-  height: 90%;
-  margin-left: 25px;
-}
-.forWrap{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  margin-top: 30px;
-  
-}
-.div2nd{
-  flex: 1;
-  flex-basis: 50%;
-  height: auto;
-  padding-top: 50px;
-  margin-left: 0px;
+  justify-content: start;
+margin-top: 30px;
 
 }
-.title1{
-  margin-left: 0px;
+.done{
+  width: 50%;
+  height: 40px;
+  color: white;
+  background-color: #ea4c89;
+margin-top: 30px;
+/* margin-left: 20px; */
+font-size: 15px;
+font-weight: 600;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+margin-left: 6px;
 }
-.title{
-  margin-left: 0px;
+.done:hover{
+  background-color: lightpink;
 }
 
 
-  .hide {
-    width: 95%;
-    height: 60vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    background-color: white;
-    position: absolute;
-    top: 320px;
-    right: 0px;
-    margin-right: 10px;
-    border: 1px solid lightgray;
-    border-radius: 5px;
-    object-fit: cover;
-    padding: 10px;
+.leftSideCenter nav ul{
+list-style: none;
+}
+
+.signup nav ul{
+  list-style: none;
   }
-  .centerSignUp {
-    width: 100%;
-    height: 100%;
-    /* background-color: aqua; */
-  }
-  .centerSignUp p {
-    color: black;
-    font-size: 16px;
-    font-weight: 600;
-    text-align: start;
-    /* margin-top: 20px; */
-  }
-  .signUpGoogle {
-    margin-top: 10px;
-    width: 100%;
-    height: 5vh;
-    display: flex;
-    flex-direction: row;
-     align-items: center; 
-    justify-content: center; 
-    /* background-color: blueviolet; */
-  }
-  
-   .withGoogle {
-    width: 60%;
-    height: 100%;
 
 
-   } 
-   .hiden {
-    width: 100%;
-    height: 60%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    flex-wrap: wrap;
-  }
-  
-  .nameOrEmail {
-    width: 100%;
-    height: 70px;
-    /* background-color: gold; */
-    display: flex;
-    flex-direction: row;
-    /* align-items: flex-start; */
-  }
-  .nameOption1 {
+  .signup nav ul li{
+    width: 90%;
+    height: 40px;
+    }
+
+
+
+
+
+
+
+
+    @media only screen and (max-width: 600px){
+      .header{
+    
+        /* background-color: red; */
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+      }
+      .logo {
+        flex: 1;
+        height: 100%;
+        border: none;
+        /* background-color: rebeccapurple; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-left: 0px;
+      }
+      .listHideWidth{
+        width: 30%;
+        height: 100%;
+    
+        display: flex;
+        align-items: center;
+      }
+      .listHide{
+        display: block;
+        padding-left: 10px;
+    
+      }
+      
+      .headerTitle{
+        display: none;
+      }
+      /* .mainuName{
+        font-size: 15px;
+        margin: 5px;
+      } */
+      .signBar{
+        width: 30%;
+        height: 100%;
+        display: flex;
+    
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+      }
+      .signBar img {
+      display: none;
+      }
+    
+      .signInOrSignup {
+    display: none;
+    }
+    .newProject {
+      width: 100%;
+      height: 30px;
+    
+      background-color: lightgrey;
+      border: none;
+      border-radius: 5px;
+      color: black;
+      font-weight: 400;
+      font-size: 12px;
+      /* margin-left: 10px; */
+      margin-right: 0px;
+    }
+    .newProject:hover{
+      background-color: transparent;
+      border: 1px solid black;
+    }
+    .middleTitel {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      /* border: 1px solid lightgrey; */
+      /* justify-content: space-between; */
+    }
+    .left {
+      width: 100%;
+      height: 100%;
+      /* background-color: black; */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      object-fit: contain;
+    
+      /* padding-right: 35px; */
+    }
+    .firstTitle {
+      font-size: 35px;
+      font-weight: bold;
+      text-align:center;
+      margin-left: 0px;
+      margin: 10px;
+    
+    }
+    .secondTitle {
+      font-size: 15px;
+      font-weight: 300;
+      text-align: center;
+      margin-left: 0px;
+      margin-top: 10px;
+      line-height: 1.3;
+    }
+    .signup {
+      width: 100%;
+      height: 40px;
+      /* background-color: aqua; */
+      text-align: center;
+      margin-top: 10px;
+    }
+    .signupBtn {
+      width: 20%;
+      height: 100%;
+      background-color: #ea4c89;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+    
+      color: white;
+    }
+    .signupBtn:hover {
+      background-color: lightpink;
+    }
+    .signInBtn {
+      width: 20%;
+      height: 100%;
+      background-color: #ea4c89;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+      color: white;
+      /* font-size: 20px; */
+    }
+    .signInBtn:hover {
+      background-color: lightpink;
+    }
+    .right {
+      width: 100%;
+      height: 100%;
+      /* background-color: green; */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .rightsideImg{
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+    .filterCenter {
+      width: 100%;
+      height: 10vh;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-evenly;
+    }
+    .filterPage {
+      justify-content: space-evenly;
+      margin-top: 20px;
+      object-fit: contain;
+    }
+    
+    .filterPageTitle{
+      display: none;
+    }
+    .populer{
+      margin-right: 20px;
+    }
+    .populer select{
+      font-size: 15px;
+    }
+    .populer1{
+      margin-left: 20px;
+      font-size: 10px;
+    }
+    .populer1 select{
+      font-size: 15px;
+    }
+    .footer2 {
+      width: 100%;
+      height: auto;
+      padding-top: 60px;
+      /* background-color: rebeccapurple; */
+      display: flex;
+      flex-direction: column;
+      background-color: #f9f8fd;
+    }
+    
+    .endLeftFooter {
+      width: 100%;
+      height: 100%;
+      /* background-color: red; */
+      display: flex;
+      flex-direction: row;
+      align-items:center;
+      justify-content: center;
+      text-align: start;
+    }
+    .endLeftFooterForCenter{
+      width: 100%;
+      height: 90%;
+      margin-left: 25px;
+    }
+    .forWrap{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      margin-top: 30px;
+      
+    }
+    .forWrap .div2nd nav ul{
+      list-style: none;
+    }
+    .div2nd{
+      flex: 1;
+      flex-basis: 50%;
+      height: auto;
+      padding-top: 50px;
+      margin-left: 0px;
+    
+    }
+    
+    .title1{
+      margin-left: 0px;
+    }
+    .title{
     margin-left: 0px;
-  }
-  .nameOption1 p {
-    font-size: 12px;
+    
+    }
+    
+    
+      .hide {
+        width: 95%;
+        height: 60vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        background-color: white;
+        position: absolute;
+        top: 320px;
+        right: 0px;
+        margin-right: 10px;
+        border: 1px solid lightgray;
+        border-radius: 5px;
+        object-fit: cover;
+        padding: 10px;
+      }
+      .centerSignUp {
+        width: 100%;
+        height: 100%;
+        /* background-color: aqua; */
+      }
+      .centerSignUp p {
+        color: black;
+        font-size: 16px;
+        font-weight: 600;
+        text-align: start;
+        /* margin-top: 20px; */
+      }
+      .signUpGoogle {
+        margin-top: 10px;
+        width: 100%;
+        height: 5vh;
+        display: flex;
+        flex-direction: row;
+         align-items: center; 
+        justify-content: center; 
+        /* background-color: blueviolet; */
+      }
+      
+       .withGoogle {
+        width: 60%;
+        height: 100%;
+    
+    
+       } 
+       .hiden {
+        width: 100%;
+        height: 60%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+      
+      .nameOrEmail {
+        width: 100%;
+        height: 70px;
+        /* background-color: gold; */
+        display: flex;
+        flex-direction: row;
+        /* align-items: flex-start; */
+      }
+      .nameOption1 {
+        margin-left: 0px;
+      }
+      .nameOption1 p {
+        font-size: 12px;
+    
+        margin-left: 0px;
+     
+      }
+    
+      .nameOption2 p {
+        font-size: 12px;
+    
+        margin-left: 0px;
+     
+      
+      }
+      .yourName {
+    
+        margin-left: 0px;
+      
+    
+      }
+    
+      .passEmailOption {
+        width: 100%;
+        height: 20vh;
+        display: flex;
+        flex-direction: column;
+        margin-top: 6px;
+      }
+    
+      .nameOption3 p{
+        font-size: 12px;
+    
+        margin-left: 0px;
+      
+      }
+      .emailid {
+    
+        margin-left: 0px;
+      
+      }
+    
+      .password {
+        margin-left: 0px;
+      }
+      .check p {
+        font-size: 12px;
+        text-align: justify;
+        padding-left: 16px;
+        font-weight: 400;
+      }
+      .end{
+        width: 100%;
+        height: 20%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+      }
+      h1{
+        font-size: 12px;
+      }
+
+
+
+
+
+
+      .signUpPAge{
+
+        display: flex;
+        flex-direction: column;
+      }
+
+    .leftPage{
+      display: none;
+    }
+    .rightPage{
+      width: 100%;
+      height: 100%;
+    }
+    .mediaQuary{
+      display: block;
+      text-align: left;
+      width: 90%;
+      height: 70%;
+      cursor: pointer;
+    }
+    .alreadyAMenber{
+      width: 100%;
+      height: 5vh;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      text-align: start;
+      justify-content: start;
+    }
+    .alreadymembers{
+      display: none;
+    }
+    .signInalready{
+      display: none;
+    }
+    .centerSignUp p{
+      color: black;
+      font-size: 23px;
+      font-weight: bold;
+      text-align: start;
+      margin-top: 20px;
+      /* margin-left: 30px; */
+    }
+     .withGoogle {
+      width: 60%;
+      height: 100%;
+       display: flex;
+      flex-direction: row;
+      justify-items:  center; 
+      align-items: center; 
+        text-align: center;  
+      background-color:blue; 
+      margin-top: 30px;
+     } 
+     .withGoogle:hover{
+      background-color: rgb(86, 86, 197);
+    
+     }
+     .withGoogle img{
+       width: 15%;
+       height:90%;
+
+       margin: 2px;
+     }
+    .loginWithGoogle{
+      width: 100%;
+      height: 100%;
+      /* background-color: rebeccapurple; */
+    border: none;
+    border-radius: 10px;
+    }
+    .loginWithGoogle {
+      font-size: 15px;
+
+    }
+
+    .hiden{
+      width: 100%;
+      height: 50%;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-top: 30px;
+    }
+    
+    .nameOrEmail{
+      width: 100%;
+      height: 70px;
+      /* background-color: gold; */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-top: 30px;
+    }
+    .nameOption{
+      font-size: 12px;
+      font-weight: bold;
+      flex: 1;
+      flex-basis: 400px;
+      width: 90%;
+      height: 10vh;
+      text-align: center;
+      margin-left: 1px;
+      display: flex;
+      flex-direction: column;
+    }
+    .nameOption p{
+      font-size: 16px;
+      font-weight: bold;
+      text-align: start; 
+      margin-top: 20px;
+      /* margin-top: 20px; */
+    }
+    .yourName{
+      width: 99%;
+      height: 40px;
+      border-radius: 10px;
+      border: none;
+      font-size: 15px;
+      text-align: start;
+      padding-left: 10px;
+      background-color: #f3f3f4;
+    
+    }
+    .yourName:hover{
+      background-color: transparent;
+      border: 3px solid lightpink;
+    }
+    .yourEmail{
+      width: 100%;
+
+      font-size: 15px;
+
+    }
+
+    .passEmailOption{
+
+
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      margin-top: 40px;
+      
+    }
+
+    .password:hover{
+      background-color: transparent;
+      border: 3px solid lightpink;
+    }
+    .check{
+      width: 90%;
+      height: 50px;
+      /* background-color:chartreuse; */
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      margin-top: 50px;
+    }
+    .checkboxs{
+      margin-left: 15px;
+      margin-top: 10px;
+      width: 30px;
+      height: 30px;
+    }
+    .check p{
+      font-size: 13px;
+      padding-left: 16px;
+
+    }
+    .doneBtnCenter{
+      width: 100%;
+      height: 50px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+    margin-top: 30px;
+
+    }
+    .done{
+      width: 35%;
+      height: 40px;
+    font-size: 13px;
 
     margin-left: 0px;
- 
-  }
 
-  .nameOption2 p {
-    font-size: 12px;
+    }
+    .done:hover{
+      background-color: lightpink;
+    }
 
-    margin-left: 0px;
- 
-  
-  }
-  .yourName {
-
-    margin-left: 0px;
-  
-
-  }
-
-  .passEmailOption {
-    width: 100%;
-    height: 20vh;
-    display: flex;
-    flex-direction: column;
-    margin-top: 6px;
-  }
-
-  .nameOption3 p{
-    font-size: 12px;
-
-    margin-left: 0px;
-  
-  }
-  .emailid {
-
-    margin-left: 0px;
-  
-  }
-
-  .password {
-    margin-left: 0px;
-  }
-  .check p {
-    font-size: 12px;
-    text-align: justify;
-    padding-left: 16px;
-    font-weight: 400;
-  }
-  .end{
-    width: 100%;
-    height: 20%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-  }
-  h1{
-    font-size: 12px;
-  }
-
-  
+    
+    .leftSideCenter nav ul{
+    list-style: none;
+    }
+    
+    .signup nav ul{
+      list-style: none;
+      }
+    
+    
+      .signup nav ul li{
+        width: 90%;
+        height: 40px;
+        }
+    
+    
+    }
+    
 
 
-}
+
+
+
+
+

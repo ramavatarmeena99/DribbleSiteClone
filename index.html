@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./index.css" />
   </head>
   <body>
-    <div class="header">
+    <div class="header" id="topPage">
      <div class="listHideWidth">
       <img class="listHide" src="./static/post/reorder_black_24dp.svg" />
 
@@ -19,13 +19,25 @@
         <img src="./static/a.svg" />
       </div>
       <div class="headerTitle">
-        <p class="mainuName">Inspiration</p>
-        <p class="mainuName">Find Work</p>
-        <p class="mainuName">Learn Design</p>
-        <p class="mainuName">Go Pro</p>
-        <p class="mainuName">Marketplace</p>
-        <p class="mainuName">Hire Designers</p>
+        <nav>
+          <ul>
+            <li>
+              <a>
+                <p onclick="showinspirationDiv()" class="mainuName inspirationTag">Inspiration</p>
+                  
+
+                <p class="mainuName findWorkTag">Find Work</p>
+                <p class="mainuName">Learn Design</p>
+                <p class="mainuName">Go Pro</p>
+                <p class="mainuName">Marketplace</p>
+                <p class="mainuName">Hire Designers</p>
+              </a>            
+            </li>
+          </ul>
+        </nav>
+       
       </div>
+
       <div class="signBar">
         <img src="./static/Search.svg" />
         <h1 class="signInOrSignup">Sign in / Sign up</h1>
@@ -33,6 +45,10 @@
         <!-- <div class="hide">Ram Ram sa</div> -->
       </div>
     </div>
+      <div class="inspirationDiv"></div>
+      <div class="inspirationDiv2"></div>
+
+
     <div class="middleTitel">
       <div class="left">
         <p class="firstTitle">Discover the world’s top designers & creatives</p>
@@ -41,70 +57,17 @@
           and home to the world's best design professionals.
         </p>
         <div class="signup">
-          <button onclick="showTheHIde()" class="signupBtn">Sign up</button>
-          <button onclick="showTheHIde()" class="signInBtn">Sign In</button>
+          <nav>
+            <ul>
+              <li>
+                <a href="./signUp.html">
+                  <button onclick="showTheHIde()" class="signupBtn">Sign up</button>
+         
+                </a>
+              </li>
+            </ul>
+          </nav>
 
-          <div onclick="hideInput()" class="hide">
-
-
-            <div class="alreadyAMenber">
-              <p class="alreadymembers?">Already A member?</p>
-             <p class="signInalready">Sign In</p>
-            </div>
-            <div class="signUpPage">
-<div class="centerSignUp">
-  <p>Sign up to Dribbble</p>
-  <div class="signUpGoogle">
-    <div class="withGoogle">
-      <img src="https://cdn-teams-slug.flaticon.com/google.jpg" />
-      <button class="loginWithGoogle">Sign Up With Google</button>
-    </div>
-    <div class="withTweetr">
-      <img src="./static/post/verified_black_24dp.svg" />
-    </div>
-
-  </div>
-  <div class="userInformation">
-
-  </div>
-  <div onclick="hideInput()" class="hiden">
-
-<div class="nameOrEmail">
-  <div class="nameOption1">
-    <p>Name </p>
-  <input class="yourName" placeholder="" type="text" />
-  </div>
-  <div class="nameOption2">
-    <p>Username</p>
-
-  <input class="userName" placeholder="" type="text" />
-  </div>
-</div>
-  <div class="passEmailOption">
-    <div class="nameOption3">
-      <p>Email</p>
-  
-      <input class="emailid" placeholder="" type="text" />
-     </div>
-     <div class="nameOption3">
-      <p>Password</p>
-  
-      <input class="password" placeholder="6+ characters" type="text" />
-     </div>
-  </div>
-<div class="check">
-  <input onclick="checkboxx()"  class="checkboxs" placeholder="" type="checkbox" />
-  <p>Creating an account means you’re okay with our Terms of Service, Privacy Policy, and our default Notification Settings.</p>
-</div>  
-<div class="end">
-  <button onclick="doneButton()" class="done">
-    <h1>Create Account</h1>
-  </button>
-</div>
-  </div>
-</div>
-            </div>
-          </div>
         </div>
       </div>
       <div class="right">
@@ -125,15 +88,25 @@
           <!-- <button >Popular</button> -->
         </div>
         <div class="filterPageTitle">
-          <p class="filterPageTitle1">All</p>
-          <p class="filterPageTitle1">Animation</p>
-          <p class="filterPageTitle1">Branding</p>
-          <p class="filterPageTitle1">Illustration</p>
-          <p class="filterPageTitle1">Mobile</p>
-          <p class="filterPageTitle1">Print</p>
-          <p class="filterPageTitle1">Product Design</p>
-          <p class="filterPageTitle1">Typography</p>
-          <p class="filterPageTitle1">Web Design</p>
+          <nav>
+            <ul>
+              <li>
+                <a>
+                  <p class="filterPageTitle1">All</p>
+                  <p class="filterPageTitle1">Animation</p>
+                  <p class="filterPageTitle1">Branding</p>
+                  <p class="filterPageTitle1">Illustration</p>
+                  <p class="filterPageTitle1">Mobile</p>
+                  <p class="filterPageTitle1">Print</p>
+                  <p class="filterPageTitle1">Product Design</p>
+                  <p class="filterPageTitle1">Typography</p>
+                  <p class="filterPageTitle1">Web Design</p>
+                </a>            
+              </li>
+            </ul>
+          </nav>
+         
+         
         </div>
         <div class="populer1">
           <select name="filter" id="filter">
@@ -488,30 +461,21 @@
     </div>
     <div class="footer1"></div>
     <div class="footer2">
-      <!-- <div class="div1st"> -->
-      <!-- <div> -->
-      <!-- <button class="dribble">dribbble</button>-->
-      <!-- <img src="./static/post/b.svg" /> -->
-      <!-- <p class="dribbbleTitle">
-            Dribbble is the world’s leading community for creatives to share,
-            grow, and get hired.
-          </p>
-        </div>
-       <div class="endIcons">
-        <div class="icons">
-          <img src="./static/post/face_black_24dp.svg" />
-          <img src="./static/post/filter_alt_black_24dp.svg" />
-          <img src="./static/post/perm_identity_black_24dp.svg" />
-          <img src="./static/post/thumb_up_black_24dp.svg" />
-          <img src="./static/post/verified_black_24dp.svg" />
-        </div>
-        </div> -->
-      <!-- </div> -->
+
       <div class="endLeftFooter">
         <div class="endLeftFooterForCenter">
           <div class="endLeftTopFooter">
             <div class="endLeftTopFooterImg">
-              <img src="./static/post/b.svg" />
+             <nav>
+               <ul>
+                 <li>
+                   <a href="#topPage">
+                    <img src="./static/post/b.svg" />
+
+                   </a>
+                 </li>
+               </ul>
+             </nav>
               <p>Dribbble is the world’s leading community for creatives to share,
                 grow, and get hired.</p>
             </div>
@@ -527,56 +491,100 @@
       </div>
       <div class="forWrap">
         <div class="div2nd">
-          <p class="title1">For designers</p>
-          <p class="title">Explore design work</p>
-          <p class="title">Go Pro!</p>
-          <p class="title">Design blog</p>
-          <p class="title">Overtime podcast</p>
-          <p class="title">Dribbble meetups</p>
-          <p class="title">Playoffs</p>
-          <p class="title">Code of conduct</p>
+          <nav>
+            <ul>
+              <li>
+                <a>
+                  <p class="title1">For designers</p>
+                  <p class="title">Explore design work</p>
+                  <p class="title">Go Pro!</p>
+                  <p class="title">Design blog</p>
+                  <p class="title">Overtime podcast</p>
+                  <p class="title">Dribbble meetups</p>
+                  <p class="title">Playoffs</p>
+                  <p class="title">Code of conduct</p>
+                </a>            
+              </li>
+            </ul>
+          </nav>
+
         </div>
         <div class="div2nd">
-          <p class="title1">Hire designers</p>
-          <p class="title">Post a job opening</p>
-          <p class="title">Post a freelance project</p>
-          <p class="title">Search for designers</p>
-          <br />
-          <p class="title1">Brands</p>
-          <p class="title">Advertise with us</p>
+          <nav>
+            <ul>
+              <li>
+                <a>
+                  <p class="title1">Hire designers</p>
+                  <p class="title">Post a job opening</p>
+                  <p class="title">Post a freelance project</p>
+                  <p class="title">Search for designers</p>
+                  <p class="title1">Brands</p>
+                  <p class="title">Advertise with us</p>
+                </a>            
+              </li>
+            </ul>
+          </nav>
+         
         </div>
         <div class="div2nd">
-          <p class="title1">Company</p>
-          <p class="title">About</p>
-          <p class="title">Careers</p>
-          <p class="title">Support</p>
-          <p class="title">Media kit</p>
-          <p class="title">Testimonials</p>
-          <p class="title">API</p>
-          <p class="title">Terms of service</p>
-          <p class="title">Privacy policy</p>
+          <nav>
+            <ul>
+              <li>
+                <a>
+                  <p class="title1">Company</p>
+                  <p class="title">About</p>
+                  <p class="title">Careers</p>
+                  <p class="title">Support</p>
+                  <p class="title">Media kit</p>
+                  <p class="title">Testimonials</p>
+                  <p class="title">API</p>
+                  <p class="title">Terms of service</p>
+                  <p class="title">Privacy policy</p>
+                </a>            
+              </li>
+            </ul>
+          </nav>
+ 
         </div>
         <div class="div2nd">
-          <p class="title1">Directories</p>
-          <p class="title">Design jobsl</p>
-          <p class="title">Designers for hire</p>
-          <p class="title">Freelance designers for hire</p>
-          <p class="title">Tags</p>
-          <p class="title">Places</p>
-          <br />
-          <p class="title1">Design assets</p>
-          <p class="title">Creative Market</p>
-          <p class="title">Fontspring</p>
-          <p class="title">Font Squirrel</p>
+          <nav>
+            <ul>
+              <li>
+                <a>
+                  <p class="title1">Directories</p>
+                  <p class="title">Design jobsl</p>
+                  <p class="title">Designers for hire</p>
+                  <p class="title">Freelance designers for hire</p>
+                  <p class="title">Tags</p>
+                  <p class="title">Places</p>
+                  <br />
+                  <p class="title1">Design assets</p>
+                  <p class="title">Creative Market</p>
+                  <p class="title">Fontspring</p>
+                  <p class="title">Font Squirrel</p>
+                </a>            
+              </li>
+            </ul>
+          </nav>
+
         </div>
         <div class="div2nd">
-          <p class="title1">Design Resources</p>
-          <p class="title">Freelancing</p>
-          <p class="title">Design Hiring</p>
-          <p class="title">Design Portfolio</p>
-          <p class="title">Design Education</p>
-          <p class="title">Creative Process</p>
-          <p class="title">Design Industry Trends</p>
+          <nav>
+            <ul>
+              <li>
+                <a>
+                  <p class="title1">Design Resources</p>
+                  <p class="title">Freelancing</p>
+                  <p class="title">Design Hiring</p>
+                  <p class="title">Design Portfolio</p>
+                  <p class="title">Design Education</p>
+                  <p class="title">Creative Process</p>
+                  <p class="title">Design Industry Trends</p>
+                </a>            
+              </li>
+            </ul>
+          </nav>
+
         </div>
         <div class="div3nd"></div>
       </div>
