@@ -1,26 +1,24 @@
-
 function showTheHIde() {
   var inputField = document.querySelector(".hide");
-  var signupBtn = document.querySelector(".signupBtn")
-   var rightsideImg = document.querySelector(".rightsideImg")
+  var signupBtn = document.querySelector(".signupBtn");
+  var rightsideImg = document.querySelector(".rightsideImg");
   inputField.style.display = "block";
   var done = document.querySelector(".done");
   signupBtn.style.display = "none";
-  rightsideImg.style.display = "none"
+  rightsideImg.style.display = "none";
 }
 function doneButton(value) {
   var yourName = document.querySelector(".yourName");
   var userName = document.querySelector(".yourEmail");
   var emailid = document.querySelector(".yourNumber");
-  var password = document.querySelector(".password")
+  var password = document.querySelector(".password");
+  var check = document.querySelector(".checkboxs");
 
-
-
-  var done = document.querySelector(".done")
+  var done = document.querySelector(".done");
   var inputField = document.querySelector(".hide");
 
-  var rightsideImg = document.querySelector(".rightsideImg")
-  var signInBtn = document.querySelector(".signInBtn")
+  var rightsideImg = document.querySelector(".rightsideImg");
+  var signInBtn = document.querySelector(".signInBtn");
 
   if (!yourName.value) {
     alert("Please Enter Your Name");
@@ -38,24 +36,26 @@ function doneButton(value) {
     alert("Please Enter Password");
     return;
   }
-  if (password.value.length<6) {
+  if (password.value.length < 6) {
     alert("Please Enter 6+ Digit Password");
+    return;
+  }
+  if (!check.checked) {
+    alert("PLease Click Terms And Conditions");
     return;
   }
 
   alert("Your Profile Is Created ");
 
-  yourName.value = ""
-  userName.value = ""
-  emailid.value = ""
-  password.value = ""
+  yourName.value = "";
+  userName.value = "";
+  emailid.value = "";
+  password.value = "";
 
+  inputField.style.display = "none";
 
-  inputField.style.display = "none"
-
-  rightsideImg.style.display = "block"
-  signInBtn.style.display = "block"
-
+  rightsideImg.style.display = "block";
+  signInBtn.style.display = "block";
 
   var value = yourName.value;
   var value = mobileNumber.value;
@@ -63,183 +63,198 @@ function doneButton(value) {
   yourName.value = "";
   mobileNumber.value = "";
   email.value = "";
-
 }
 
-var showinspirationDiv = () =>{
-  var inspirationDiv2 = document.querySelector(".inspirationDiv2")
+var inspirationDiv = document.querySelector(".inspirationDiv");
+inspirationDiv.style.display = "none";
 
-  var inspirationTag = document.querySelector(".mainuName")
+var inspirationDiv2 = document.querySelector(".inspirationDiv2");
+inspirationDiv2.style.display = "none";
 
-  var inspirationDiv = document.querySelector(".inspirationDiv")
-  var inspirationleftDiv = document.createElement("div")
-  inspirationleftDiv.setAttribute("class", "design")
+var render = () => {
+  var inspirationDiv2 = document.querySelector(".inspirationDiv2");
 
-var h1 = document.createElement("h1")
-h1.innerText = "Explore Design Work"  
+  var inspirationTag = document.querySelector(".inspirationTag");
 
-var h2 = document.createElement("h1")
-h2.innerText = "New & Noteworthy" 
+  var inspirationDiv = document.querySelector(".inspirationDiv");
+  var inspirationleftDiv = document.createElement("div");
+  inspirationleftDiv.setAttribute("class", "design");
+  var inspirationrightDiv = document.createElement("div");
+  inspirationrightDiv.setAttribute("class", "designCategories");
 
-var h3 = document.createElement("h1")
-h3.innerText = "Playoffs" 
+  var h1 = document.createElement("p");
+  h1.innerHTML = "Explore Design Work";
 
-var h4 = document.createElement("h1")
-h4.innerText = "Blog"  
+  var h2 = document.createElement("p");
+  h2.innerHTML = "New & Noteworthy";
 
-var h5 = document.createElement("h1")
-h5.innerText = "Weekly Warm-Up"  
+  var h3 = document.createElement("p");
+  h3.innerHTML = "Playoffs";
 
+  var h4 = document.createElement("p");
+  h4.innerHTML = "Blog";
 
+  var h5 = document.createElement("p");
+  h5.innerHTML = "Weekly Warm-Up";
 
-  var inspirationrightDiv = document.createElement("div")
-  inspirationrightDiv.setAttribute("class", "designCategories")
-  var h22 = document.createElement("h2")
+  var jobBoard = document.createElement("p");
+  jobBoard.innerHTML = "Explore Design Work";
 
-  h22.innerText = "Browse Categories"
-  var h11 = document.createElement("h2")
-  h1.innerText = "Explore Design Work"  
-  
-  var h22 = document.createElement("h2")
-  h2.innerText = "New & Noteworthy" 
-  
-  var h33 = document.createElement("h2")
-  h3.innerText = "Playoffs" 
-  
-  var h44 = document.createElement("h2")
-  h4.innerText = "Blog"  
-  
-  var h55 = document.createElement("h2")
-  h5.innerText = "Weekly Warm-Up"  
+  var freeLance = document.createElement("p");
+  freeLance.innerHTML = "New & Noteworthy";
 
-  inspirationTag.addEventListener("mouseover",(event) =>{
-    inspirationDiv.style.display = "block"
-    inspirationDiv2.style.display = "none"
-  })
-  // inspirationTag.addEventListener("mouseout",(event) =>{
-  //   inspirationDiv.style.display = "none"
-  //   // inspirationTag.style.display = "none"
-  // })
-  inspirationleftDiv.addEventListener("mouseover",(event) =>{
-    inspirationDiv.style.display = "block"
-    // inspirationDiv.style.display = "none"
-  })
-  inspirationleftDiv.addEventListener("mouseout",(event) =>{
-    inspirationDiv.style.display = "none"
-    // inspirationDiv.style.display = "none"
-  })
+  var projects = document.createElement("p");
+  projects.innerHTML = "New & Noteworthy";
 
+  var yourVideo = document.createElement("p");
+  yourVideo.innerHTML = "New & Noteworthy";
 
-  inspirationleftDiv.append(h1)
-  inspirationleftDiv.append(h2)
-  inspirationleftDiv.append(h3)
-  inspirationleftDiv.append(h4)
-  inspirationleftDiv.append(h5)
+  inspirationTag.addEventListener("mouseout", (event) => {
+    inspirationDiv.style.display = "none";
+  });
 
-  inspirationrightDiv.append(h22)
-  inspirationrightDiv.append(h11)
-  inspirationrightDiv.append(h33)
-  inspirationrightDiv.append(h44)
-  inspirationrightDiv.append(h55)
+  inspirationTag.addEventListener("mouseover", (event) => {
+    inspirationDiv.style.display = "flex";
+    inspirationDiv2.style.display = "none";
+  });
 
+  inspirationleftDiv.addEventListener("mouseover", (event) => {
+    inspirationDiv.style.display = "flex";
+  });
+  inspirationrightDiv.addEventListener("mouseover", (event) => {
+    inspirationDiv.style.display = "flex";
+  });
+  inspirationleftDiv.addEventListener("mouseout", (event) => {
+    inspirationDiv.style.display = "none";
+  });
+  inspirationrightDiv.addEventListener("mouseout", (event) => {
+    inspirationDiv.style.display = "none";
+  });
 
+  inspirationleftDiv.append(h1);
+  inspirationleftDiv.append(h2);
+  inspirationleftDiv.append(h3);
+  inspirationleftDiv.append(h4);
+  inspirationleftDiv.append(h5);
 
-  inspirationDiv.append(inspirationleftDiv)
+  inspirationrightDiv.append(freeLance);
+  inspirationrightDiv.append(jobBoard);
+  inspirationrightDiv.append(projects);
+  inspirationrightDiv.append(yourVideo);
 
-  inspirationDiv.append(inspirationrightDiv)
+  inspirationDiv.append(inspirationleftDiv);
+  inspirationDiv.append(inspirationrightDiv);
+
+  // inspirationDiv.append(inspirationrightDiv)
+};
+
+render();
+
+var showFindWorkTag = () => {
+  var inspirationTag = document.querySelector(".mainuName");
+
+  var inspirationDiv = document.querySelector(".inspirationDiv");
+  var findWorks = document.querySelector(".findWorkTag");
+
+  var inspirationDiv2 = document.querySelector(".inspirationDiv2");
+  var inspiration2leftDiv = document.createElement("div");
+  inspiration2leftDiv.setAttribute("class", "design");
+  var inspiration2rightDiv = document.createElement("div");
+  inspiration2rightDiv.setAttribute("class", "designCategories");
+
+  var h1 = document.createElement("p");
+  h1.innerText = "Job Board";
+
+  var h2 = document.createElement("p");
+  h2.innerText = "Freelance Projects";
+
+  var h3 = document.createElement("p");
+  h3.innerText = "Want Freelance Design Projects";
+
+  var h4 = document.createElement("p");
+  h4.innerText = "Personalize Your Profile With Video ?";
+
+  var h5 = document.createElement("p");
+  h5.innerText = "Weekly Warm-Up";
+
+  var h11 = document.createElement("p");
+  h1.innerText = "Explore Design Work";
+
+  var h22 = document.createElement("p");
+  h2.innerText = "New & Noteworthy";
+
+  var h33 = document.createElement("p");
+  h3.innerText = "Playoffs";
+
+  var h44 = document.createElement("p");
+  h4.innerText = "Blog";
+
+  var h55 = document.createElement("p");
+  h5.innerText = "Weekly Warm-Up";
+
+  findWorks.addEventListener("mouseover", (event) => {
+    inspirationDiv2.style.display = "flex";
+    inspirationDiv.style.display = "none";
+  });
+
+  inspiration2leftDiv.addEventListener("mouseover", (event) => {
+    inspirationDiv2.style.display = "flex";
+  });
+  inspiration2rightDiv.addEventListener("mouseover", (event) => {
+    inspirationDiv2.style.display = "flex";
+  });
+  inspiration2leftDiv.addEventListener("mouseout", (event) => {
+    inspirationDiv2.style.display = "none";
+  });
+  inspiration2rightDiv.addEventListener("mouseout", (event) => {
+    inspirationDiv2.style.display = "none";
+  });
+  findWorks.addEventListener("mouseout", (event) => {
+    inspirationDiv2.style.display = "none";
+  });
+
+  inspiration2leftDiv.append(h1);
+  inspiration2leftDiv.append(h2);
+  inspiration2leftDiv.append(h3);
+  inspiration2leftDiv.append(h4);
+  inspiration2leftDiv.append(h5);
+
+  inspiration2rightDiv.append(h22);
+  inspiration2rightDiv.append(h11);
+  inspiration2rightDiv.append(h33);
+  inspiration2rightDiv.append(h44);
+  inspiration2rightDiv.append(h55);
+
+  inspirationDiv2.append(inspiration2leftDiv);
+
+  inspirationDiv2.append(inspiration2rightDiv);
 
   // console.log(inspirationDiv);
-}
+};
 
+showFindWorkTag();
 
-showinspirationDiv();
+// var showFindWorkTag = () =>{
+//   var findWorkTag = document.querySelector(".mainuName")
+//   var hideinspirationDiv = document.querySelector(".hideinspirationDiv")
+//   var inspirationDiv = document.querySelector(".inspirationDiv")
+//   var design = document.querySelector(".design")
+//   findWorkTag.addEventListener("mouseover",(event) =>{
+//     hideinspirationDiv.style.display = "block"
+//     inspirationDiv.style.display = "block"
 
+//   })
 
-var findWork = () =>{
-  var inspirationTag = document.querySelector(".mainuName")
+// }
+// showFindWorkTag();
 
-  var inspirationDiv = document.querySelector(".inspirationDiv")
-  var findWorks = document.querySelector(".findWorkTag")
+// function showinspirationDiv(value){
+// var findWorkTag = document.querySelector(".mainuName")
+//   var hideinspirationDiv = document.querySelector(".hideinspirationDiv")
 
-  var inspirationDiv2 = document.querySelector(".inspirationDiv2")
-  var inspiration2leftDiv = document.createElement("div")
-  inspiration2leftDiv.setAttribute("class", "design")
+//   findWorkTag.addEventListener("mouseover" , (event) =>{
+//     hideinspirationDiv.style.display = "block"
 
-var h1 = document.createElement("h1")
-h1.innerText = "Job Board"  
+//   })
 
-var h2 = document.createElement("h1")
-h2.innerText = "Freelance Projects" 
-
-var h3 = document.createElement("h1")
-h3.innerText = "Want Freelance Design Projects" 
-
-var h4 = document.createElement("h1")
-h4.innerText = "Personalize Your Profile With Video ?"  
-
-var h5 = document.createElement("h1")
-h5.innerText = "Weekly Warm-Up"  
-
-
-
-  var inspiration2rightDiv = document.createElement("div")
-  inspiration2rightDiv.setAttribute("class", "designCategories")
-  var h22 = document.createElement("h2")
-
-  h22.innerText = "Browse Categories"
-  var h11 = document.createElement("h2")
-  h1.innerText = "Explore Design Work"  
-  
-  var h22 = document.createElement("h2")
-  h2.innerText = "New & Noteworthy" 
-  
-  var h33 = document.createElement("h2")
-  h3.innerText = "Playoffs" 
-  
-  var h44 = document.createElement("h2")
-  h4.innerText = "Blog"  
-  
-  var h55 = document.createElement("h2")
-  h5.innerText = "Weekly Warm-Up"  
-
-  findWorks.addEventListener("mouseover",(event) =>{
-    inspirationDiv2.style.display = "block"
-    inspirationDiv.style.display = "none"
-  })
-  // inspirationTag.addEventListener("mouseout",(event) =>{
-  //   inspirationDiv.style.display = "none"
-  //   // inspirationTag.style.display = "none"
-  // })
-  inspiration2leftDiv.addEventListener("mouseover",(event) =>{
-    inspirationDiv2.style.display = "block"
-    // inspirationDiv.style.display = "none"
-  })
-  inspiration2leftDiv.addEventListener("mouseout",(event) =>{
-    inspirationDiv2.style.display = "none"
-    // inspirationDiv.style.display = "none"
-  })
-
-
-
-  inspiration2leftDiv.append(h1)
-  inspiration2leftDiv.append(h2)
-  inspiration2leftDiv.append(h3)
-  inspiration2leftDiv.append(h4)
-  inspiration2leftDiv.append(h5)
-
-  inspiration2rightDiv.append(h22)
-  inspiration2rightDiv.append(h11)
-  inspiration2rightDiv.append(h33)
-  inspiration2rightDiv.append(h44)
-  inspiration2rightDiv.append(h55)
-
-
-
-  inspirationDiv2.append(inspiration2leftDiv)
-
-  inspirationDiv2.append(inspiration2rightDiv)
-
-  // console.log(inspirationDiv);
-}
-
-findWork();
+// }
